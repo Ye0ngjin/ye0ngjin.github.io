@@ -1,7 +1,7 @@
 ---
-title: "Blog"
+title: "예시"
 layout: archive
-permalink: tags/blog
+permalink: tags/예시
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.tags.Blog %}
+{% assign posts = site.tags.예시 %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
