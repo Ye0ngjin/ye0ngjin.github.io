@@ -29,7 +29,9 @@ layout: archive
   {% for tag in site.tags %}
     {% if tag[1].size == i %}
       <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ tag[0] }}</h2>
+        <a href="./{{ tag[0] | slugify }}">
+          <h2 class="archive__subtitle">{{ tag[0] }}</h2>
+        </a>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in tag.last %}
           <article class="archive-item">
