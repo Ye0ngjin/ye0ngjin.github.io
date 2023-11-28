@@ -1,0 +1,101 @@
+/*
+내 블로그 커스텀 스타일
+*/
+
+#sidebar .profile-wrapper, #sidebar .profile-wrapper a{
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+#sidebar .site-subtitle{
+  color: mintcream;
+}
+#sidebar ul li.nav-item a {
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #fff;
+}
+
+#sidebar ul li.nav-item.active .nav-link{
+  color: #5bd3ff;
+}
+
+#sidebar .nav-link {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+#sidebar .site-title a {
+  color: #000;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  font-size: 1.8rem;
+  font-weight: 1000;
+}
+
+#sidebar {
+  // 이미지 출처 https://pixabay.com/ko/photos/언덕-인도-자연-코다이카날-2836301
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+                    url('/assets/img/sidebar-bg-img.jpg');
+  filter: brightness(100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+@mixin custom-dark{
+  #sidebar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url('/assets/img/sidebar-bg-img.jpg');
+    filter: brightness(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    #avatar{
+      box-shadow: var(--bs-black) 0 0 0 2px;
+    }
+  }
+}
+
+html {
+  @media (prefers-color-scheme: light) {
+    &[data-mode='dark'] {
+      @include custom-dark;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      @include custom-dark;
+    }
+  }
+}
+
+.table-width-unset{
+  min-width: unset !important;
+}
+
+.table-with-border{
+  td, th{
+    border-color: var(--label-color);
+    border-style: solid;
+    border-width: thin;
+    border-collapse: collapse;
+  }
+  thead{
+    border-bottom: solid 2px var(--heading-color) !important;
+  }
+}
+
+.table-with-outline-border{
+  border: solid var(--label-color) 1px;
+
+  tr {
+    border-bottom: unset !important;
+  }
+}
+
+.blockquote-unset{
+  border-left: unset;
+  padding-left: unset;
+  color: unset;
+}
