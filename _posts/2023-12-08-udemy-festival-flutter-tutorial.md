@@ -206,7 +206,7 @@ tags:
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var isDetailMore = false;
-        updatePageContent()
+        updatePageContent();
 
         function toggleDetail() {
             isDetailMore = !isDetailMore;
