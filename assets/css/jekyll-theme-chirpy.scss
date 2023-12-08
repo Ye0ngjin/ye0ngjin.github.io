@@ -5,3 +5,40 @@
 
 /* append your custom style below */
 @import 'custom-style';
+
+// 리퀴드 문법을 이용하는 스타일은 여기에 추가하자.
+#sidebar {
+    // 이미지 출처 https://pixabay.com/ko/photos/언덕-인도-자연-코다이카날-2836301
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url({{ '/assets/img/sidebar-bg-img.jpg' | relative_url }});
+    filter: brightness(100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+@mixin custom-dark{
+    #sidebar{
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+        url({{ '/assets/img/sidebar-bg-img.jpg' | relative_url }});
+        filter: brightness(80%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        #avatar{
+            box-shadow: var(--bs-black) 0 0 0 2px;
+        }
+    }
+}
+
+html {
+    @media (prefers-color-scheme: light) {
+      &[data-mode='dark'] {
+        @include custom-dark;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      &:not([data-mode]),
+      &[data-mode='dark'] {
+        @include custom-dark;
+      }
+    }
+}
