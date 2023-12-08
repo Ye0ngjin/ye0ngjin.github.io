@@ -145,19 +145,16 @@ tags:
     }
 </style>
 
+<details markdown="1">
+  <summary>참고한 사이트 및 결과물 링크</summary>
+<https://gist.github.com/Ye0ngjin/d4970f7f8400978068801f7d843a550f>{:target="blank"}\\
+<https://dartpad.dev/?id=d4970f7f8400978068801f7d843a550f>{:target="blank"}\\
+<https://github.com/joeyhwangGit/exchange_rate_calculator>{:target="blank"}\\
+<https://joeyhwang.tistory.com/20>{:target="blank"}\\
+<https://stackoverflow.com/questions/72851548/permission-denied-to-github-actionsbot>{:target="blank"}\\
+<https://github.com/subosito/flutter-action>{:target="blank"}
+</details>
 
-
-https://gist.github.com/Ye0ngjin/d4970f7f8400978068801f7d843a550f
-
-https://dartpad.dev/?id=d4970f7f8400978068801f7d843a550f
-
-https://github.com/joeyhwangGit/exchange_rate_calculator
-
-https://joeyhwang.tistory.com/20
-
-https://stackoverflow.com/questions/72851548/permission-denied-to-github-actionsbot
-
-https://github.com/subosito/flutter-action
 <hr>{: style="margin-top: 2.5rem;"}
 ## 강의 보며 따라 만든 프로필 앱
 {: style="margin-top: 0;"}
@@ -165,15 +162,31 @@ https://github.com/subosito/flutter-action
 <iframe class="mermaid" src="https://ye0ngjin.github.io/udemy-festival-flutter-tutorial/" title="프로필 웹 앱" style="margin-left: 2rem; box-shadow: var(--language-border-color) 0 0 0 0.4rem; border-radius: 0.625rem; width: 80vw; height: 140vw; max-height: 700px; max-width: 400px"></iframe>
 <hr>
 
+## 유데미 코딩 페스티벌
+즐겨보는 유튜브 채널인 조코딩 채널에서 **유데미 코딩 페스티벌**에 대해서 알게되었고, 실습을 해볼 수 있는 **라이브 실습 강의**도 많이 포함되어 있어서 프리패스(3만원)를 신청했었다.\
+7개의 라이브 실습 강의가 준비되어 있고, 지금까지 3개를 들었는데, 정말 3만원이라는 돈이 아깝지가 않았다.\
+물론 유튜브에 무료 강의들이 있고, 인프런이나 유데미에도 저렴한 강의나 무료 강의들이 있다.\
+하지만 4시간 동안 미니프로젝트를 완성시킬 수 있다는 것과 실시간 채팅으로 물어보면서 배울 수 있다는 것이 큰 장점으로 느껴진다.\
+그리고 이런 짧은 실습을 통해서 해당 분야의 기초적인 것들을 습득할 수 있고, 관심이 있는 분야에 첫 발을 내딛는 경험을 할 수 있었다.\
+<br>
+다만 아쉬운 점이 있다면, 스트리밍 서비스 중 세션이 종료 되었다고 뜬다거나, 동시접속 되었다고 뜨는 경우가 있어서 가끔 새로고침을 해줘야하는 번거로움이 있다는 것이다.\
+그래도 1월 중에 다시보기 유데미 VOD 강의를 제공해주기 때문에 아쉬운 점이 보완될 것이라고 생각한다.\
+<br>
+지금까지 빵형의 개발도상국, 임효성, 홍드로이드의 실습 강의를 들었는데,\
+빵형의 개발도상국을 제외하고는 처음 들어본 강사들이어서, 사실 조금 걱정은 되었다.\
+하지만 실습 강의 모두 훌륭했다.👍🏻 그래서 남은 라이브 실습 강의들도 기대가 된다.
 
-
-
+<hr>
+유데미 코딩 페스티벌 정보
 <div id="app">
 
 <div class="m-auto" style="min-width: 375px; width: 40vw; max-width: 70%;">
     <div class="relative">
         <div class="max-h-[700px] overflow-hidden">
-            <div class="sandbox"><img class="no-popup" src="https://eventusstorage.blob.core.windows.net/evs/Image/udemy/73376/ProjectInfo/b4e2ea94b7ac4d1bb60230127493be44.jpg" alt="유데미페스티벌"></div>
+            <div class="sandbox">
+              ![유데미코딩페스티벌](/assets/img/udemyfestival.jpg){: .no-popup}
+<!--               <img class="no-popup" src="https://eventusstorage.blob.core.windows.net/evs/Image/udemy/73376/ProjectInfo/b4e2ea94b7ac4d1bb60230127493be44.jpg" alt="유데미코딩페스티벌"> -->
+            </div>
         </div>
         <div class="h-1/5 absolute bottom-0 w-full bg-gradient-to-t from-white"></div>
     </div>
@@ -198,7 +211,6 @@ https://github.com/subosito/flutter-action
 
         function toggleDetail() {
             isDetailMore = !isDetailMore;
-            // 변수 변경에 따른 로직 추가
             
             updatePageContent();
 
@@ -206,11 +218,11 @@ https://github.com/subosito/flutter-action
         }
 
         function updatePageContent() {
-            // "행사 소개" 뒤에 "접기" 또는 "더보기" 갱신
+            /* "행사 소개" 뒤에 "접기" 또는 "더보기" 갱신 */
             var buttonText = isDetailMore ? '접기' : '더보기';
             document.querySelector('#app button span').textContent = "행사 소개 "+ buttonText;
 
-            // "접기" 또는 "더보기" 아이콘 회전 갱신
+            /* "접기" 또는 "더보기" 아이콘 회전 갱신 */
             var rotation = isDetailMore ? '180deg' : '0deg';
             document.querySelector('#app svg').style.transform = 'rotate(' + rotation + ')';
 
@@ -231,7 +243,7 @@ https://github.com/subosito/flutter-action
             }
         }
 
-        // // 페이지 로드 후 이벤트 핸들러 연결
+        /* 페이지 로드 후 이벤트 핸들러 연결 */
         document.querySelector("#app button").addEventListener("click", function() {
             toggleDetail();
         });
