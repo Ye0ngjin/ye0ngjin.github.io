@@ -184,8 +184,7 @@ tags:
     <div class="relative">
         <div class="max-h-[700px] overflow-hidden">
             <div class="sandbox">
-              ![유데미코딩페스티벌](/assets/img/udemyfestival.jpg){: .no-popup}
-<!--               <img class="no-popup" src="https://eventusstorage.blob.core.windows.net/evs/Image/udemy/73376/ProjectInfo/b4e2ea94b7ac4d1bb60230127493be44.jpg" alt="유데미코딩페스티벌"> -->
+              <img class="no-popup" src=src="{{ '/assets/img/udemyfestival.jpg' | relative_url }}" alt="유데미코딩페스티벌">
             </div>
         </div>
         <div class="h-1/5 absolute bottom-0 w-full bg-gradient-to-t from-white"></div>
