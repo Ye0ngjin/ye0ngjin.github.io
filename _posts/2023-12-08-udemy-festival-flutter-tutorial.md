@@ -173,7 +173,7 @@ https://github.com/subosito/flutter-action
 <div class="m-auto" style="min-width: 375px; width: 40vw; max-width: 70%;">
     <div class="relative">
         <div class="max-h-[700px] overflow-hidden">
-            <div class="sandbox"><img class="no-popup" src="https://eventusstorage.blob.core.windows.net/evs/Image/udemy/73376/ProjectInfo/b4e2ea94b7ac4d1bb60230127493be44.jpg"></div>
+            <div class="sandbox"><img class="no-popup" src="https://eventusstorage.blob.core.windows.net/evs/Image/udemy/73376/ProjectInfo/b4e2ea94b7ac4d1bb60230127493be44.jpg" alt="유데미페스티벌"></div>
         </div>
         <div class="h-1/5 absolute bottom-0 w-full bg-gradient-to-t from-white"></div>
     </div>
