@@ -35,7 +35,7 @@ last_modified_at: 2023-11-09
 .step .stepbox {
   width: 512px;
   height: 512px;
-  background: url(/assets/img/1f47e-sprite-sheet.png);
+  background: url({{ '/assets/img/1f47e-sprite-sheet.png' | relative_url }});
   border-radius: 0;
   position: absolute;
   background-size: cover;
