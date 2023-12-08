@@ -184,7 +184,7 @@ tags:
     <div class="relative">
         <div class="max-h-[700px] overflow-hidden">
             <div class="sandbox">
-              <img class="no-popup" src="{{ '/assets/img/udemyfestival.jpg' | relative_url }}" alt="유데미코딩페스티벌">
+              <img class="no-popup" src="/assets/img/udemyfestival.jpg" alt="유데미코딩페스티벌">
             </div>
         </div>
         <div class="h-1/5 absolute bottom-0 w-full bg-gradient-to-t from-white"></div>
