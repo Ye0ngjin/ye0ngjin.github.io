@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 group :test do
-  gem "html-proofer", "~> 4.4"
+  gem "html-proofer", "~> 5.0"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -24,3 +24,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem 'jekyll-spaceship', group: :jekyll_plugins
 gem 'jekyll-admin', group: :jekyll_plugins
+
+gem "sinatra", ">= 3", "< 4"
