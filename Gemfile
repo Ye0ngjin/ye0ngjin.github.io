@@ -25,4 +25,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem 'jekyll-spaceship', group: :jekyll_plugins
 gem 'jekyll-admin', group: :jekyll_plugins
 
-gem "sinatra", ">= 3", "< 4"
+gem "sinatra", ">= 3", "< 5"
